@@ -1,10 +1,11 @@
 package matroska
 
 import (
-	"github.com/pixelbender/go-matroska/ebml"
 	"log"
 	"os"
 	"time"
+
+	"github.com/pixelbender/go-matroska/ebml"
 )
 
 func Decode(file string) (*File, error) {
@@ -134,7 +135,7 @@ type Block struct {
 	Timecode    int16
 	Flags       uint8
 	Frames      int
-	//Data []byte
+	Data        []byte
 }
 
 const (
